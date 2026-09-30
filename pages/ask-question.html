@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ask Question | Hillsgrowth</title>
+
+  <link rel="stylesheet" href="../dist/output.css" />
+</head>
+
+<body class="bg-cream text-ink">
+
+  <!-- ==================================================
+       HEADER
+  =================================================== -->
+  <header
+    class="absolute inset-x-0 top-0 z-30 w-full
+           border-b border-[#DDD8CC]
+           bg-[#F7F4EC]/70 backdrop-blur-[10px]"
+  >
+    <div
+      class="mx-auto flex h-[92px] max-w-[1440px]
+             items-center justify-between
+             px-6 md:px-12 lg:px-[50px]"
+    >
+      <!-- Logo -->
+      <a href="../index.html" class="shrink-0">
+        <img
+          src="../assets/images/home-7.png"
+          alt="Hillsgrowth"
+          class="h-14 w-auto object-contain"
+        />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav
+        class="hidden items-center gap-9
+               text-[15px] font-medium lg:flex"
+      >
+        <a
+          href="../index.html"
+          class="border-b border-transparent pb-1
+                 transition-colors duration-200
+                 hover:border-[#1F5F3D]"
+        >
+          Home
+        </a>
+
+        <a
+          href="./about.html"
+          class="border-b border-transparent pb-1
+                 transition-colors duration-200
+                 hover:border-[#1F5F3D]"
+        >
+          About
+        </a>
+
+        <a
+          href="./launch.html"
+          class="border-b border-transparent pb-1
+                 transition-colors duration-200
+                 hover:border-[#1F5F3D]"
+        >
+          HillsLaunch
+        </a>
+
+
+        <!-- ================= HILLSVIEW DROPDOWN ================= -->
+        <div class="group relative">
+
+          <button
+            type="button"
+            class="flex items-center gap-2
+                   border-b border-transparent pb-1
+                   transition-colors duration-200
+                   hover:border-[#1F5F3D]"
+          >
+            <span>HillsView</span>
+
+            <img
+              src="../assets/images/Vector.png"
+              alt=""
+              class="h-[7px] w-auto
+                     transition-transform duration-200
+                     group-hover:rotate-180"
+            />
+          </button>
+
+
+          <!-- Dropdown -->
+          <div
+            class="invisible absolute left-1/2 top-full
+                   z-50 w-[190px]
+                   -translate-x-1/2 pt-4
+                   opacity-0
+                   transition-all duration-200
+                   group-hover:visible
+                   group-hover:opacity-100"
+          >
+            <div
+              class="overflow-hidden rounded-[8px]
+                     border border-[#DDD8CC]
+                     bg-[#F7F4EC]
+                     shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
+            >
+
+              <a
+                href="./corner.html"
+                class="block px-5 py-3
+                       transition-colors
+                       hover:bg-[#1F5F3D]
+                       hover:text-white"
+              >
+                Corner
+              </a>
+
+              <a
+                href="./ask-question.html"
+                class="block border-t
+                       border-[#DDD8CC]
+                       bg-[#1F5F3D]/[0.07]
+                       px-5 py-3
+                       text-[#1F5F3D]
+                       transition-colors
+                       hover:bg-[#1F5F3D]
+                       hover:text-white"
+              >
+                Ask Question
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+
+        <a
+          href="./partnership.html"
+          class="border-b border-transparent pb-1
+                 transition-colors duration-200
+                 hover:border-[#1F5F3D]"
+        >
+          Partnership
+        </a>
+      </nav>
+
+
+      <!-- Apply -->
+      <a
+        href="./apply.html"
+        class="hidden bg-[#1F5F3D]
+               px-7 py-3
+               text-[15px] font-medium
+               text-white
+               transition-opacity
+               hover:opacity-90
+               lg:inline-flex"
+      >
+        Apply now
+      </a>
+
+
+      <!-- Mobile button -->
+      <button
+        type="button"
+        data-menu-button
+        aria-label="Open navigation"
+        class="flex h-10 w-10
+               items-center justify-center
+               lg:hidden"
+      >
+        <span class="text-2xl">☰</span>
+      </button>
+    </div>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div
+      data-mobile-menu
+      class="hidden border-t
+             border-[#DDD8CC]
+             bg-[#F7F4EC]
+             px-6 py-6
+             lg:hidden"
+    >
+      <nav class="flex flex-col gap-5 text-[15px] font-medium">
+
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a href="./about.html">
+          About
+        </a>
+
+        <a href="./launch.html">
+          HillsLaunch
+        </a>
+
+        <div class="border-l-2 border-[#1F5F3D] pl-4">
+          <p class="mb-3 font-semibold">
+            HillsView
+          </p>
+
+          <div class="flex flex-col gap-3 text-[#1F5F3D]">
+            <a href="./corner.html">
+              Corner
+            </a>
+
+            <a href="./ask-question.html">
+              Ask Question
+            </a>
+          </div>
+        </div>
+
+        <a href="./partnership.html">
+          Partnership
+        </a>
+
+        <a
+          href="./apply.html"
+          class="w-fit bg-[#1F5F3D]
+                 px-6 py-3 text-white"
+        >
+          Apply now
+        </a>
+
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!-- ==================================================
+       MAIN
+  =================================================== -->
+  <main class="pt-[92px]">
+
+    <section
+      class="mx-auto max-w-[1440px]
+             px-6 pb-[62px] pt-[50px]
+             md:px-12 lg:px-[50px]"
+    >
+
+      <!-- ================= TITLE ================= -->
+      <h1
+        class="font-display text-[42px]
+               font-semibold leading-tight
+               md:text-[46px]"
+      >
+        Ask question
+      </h1>
+
+
+
+      <!-- ================= FORM ================= -->
+      <div
+        class="mx-auto mt-[38px]
+               max-w-[970px]
+               rounded-[20px]
+               bg-[#EDEAE0]
+               px-7 py-8
+               md:px-[30px]
+               md:py-[32px]"
+      >
+
+        <form
+          id="question-form"
+          action="#"
+          method="post"
+          class="space-y-[20px]"
+        >
+
+          <!-- Title -->
+          <div>
+            <label
+              for="question-title"
+              class="mb-2 block
+                     text-[14px]
+                     font-medium"
+            >
+              Title
+            </label>
+
+            <input
+              id="question-title"
+              name="title"
+              type="text"
+              required
+              class="h-[40px] w-full
+                     rounded-[4px]
+                     border border-transparent
+                     bg-white px-4
+                     text-[15px]
+                     outline-none
+                     transition
+                     focus:border-[#1F5F3D]"
+            />
+          </div>
+
+
+          <!-- Body -->
+          <div>
+            <label
+              for="question-body"
+              class="mb-2 block
+                     text-[14px]
+                     font-medium"
+            >
+              Body
+            </label>
+
+            <textarea
+              id="question-body"
+              name="body"
+              required
+              class="h-[125px] w-full
+                     resize-none
+                     rounded-[4px]
+                     border border-transparent
+                     bg-white
+                     px-4 py-3
+                     text-[15px]
+                     outline-none
+                     transition
+                     focus:border-[#1F5F3D]"
+            ></textarea>
+          </div>
+
+
+          <!-- Tags -->
+          <div>
+            <label
+              for="question-tags"
+              class="mb-2 block
+                     text-[14px]
+                     font-medium"
+            >
+              Tags
+            </label>
+
+            <input
+              id="question-tags"
+              name="tags"
+              type="text"
+              class="h-[42px] w-full
+                     rounded-[4px]
+                     border border-transparent
+                     bg-white px-4
+                     text-[15px]
+                     outline-none
+                     transition
+                     focus:border-[#1F5F3D]"
+            />
+          </div>
+
+
+          <!-- Submit -->
+          <div class="pt-[2px]">
+            <button
+              type="submit"
+              class="inline-flex
+                     min-h-[40px]
+                     items-center
+                     justify-center
+                     bg-[#BE921D]
+                     px-5
+                     text-[14px]
+                     font-medium
+                     text-white
+                     transition-opacity
+                     hover:opacity-90"
+            >
+              Submit your question
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+
+
+      <!-- ================= PAGINATION ================= -->
+      <div
+        class="mt-[40px]
+               border-t border-[#D9D4C7]
+               pt-[30px]"
+      >
+        <div
+          class="flex flex-col gap-6
+                 sm:flex-row
+                 sm:items-center
+                 sm:justify-between"
+        >
+
+          <p
+            class="text-[12px]
+                   font-semibold
+                   text-[#666666]"
+          >
+            Showing 1 to 10 of 20 total posts
+          </p>
+
+
+          <nav
+            aria-label="Pagination"
+            class="flex items-center
+                   gap-7
+                   text-[13px]
+                   font-medium"
+          >
+
+            <!-- Previous -->
+            <button
+              type="button"
+              aria-label="Previous page"
+              class="text-[#777777]
+                     transition-colors
+                     hover:text-[#1F5F3D]"
+            >
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 1L1 7L7 13"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+
+            <button
+              type="button"
+              class="text-[#14703D]"
+            >
+              1
+            </button>
+
+            <button
+              type="button"
+              class="text-[#666666]
+                     transition-colors
+                     hover:text-[#14703D]"
+            >
+              2
+            </button>
+
+            <button
+              type="button"
+              class="text-[#666666]
+                     transition-colors
+                     hover:text-[#14703D]"
+            >
+              3
+            </button>
+
+
+            <!-- Next -->
+            <button
+              type="button"
+              aria-label="Next page"
+              class="text-[#777777]
+                     transition-colors
+                     hover:text-[#1F5F3D]"
+            >
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L7 7L1 13"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+          </nav>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+
+
+  <!-- ==================================================
+       FOOTER
+  =================================================== -->
+  <footer class="w-full bg-ink text-white">
+
+    <div
+      class="mx-auto max-w-[1440px]
+             px-6 py-[70px]
+             md:px-12 lg:px-[50px]"
+    >
+
+      <div
+        class="grid gap-12
+               md:grid-cols-[1.8fr_0.8fr_0.6fr]"
+      >
+
+        <!-- Logo -->
+        <div>
+          <img
+            src="../assets/images/home-7.png"
+            alt="Hillsgrowth"
+            class="h-20 w-auto object-contain"
+          />
+        </div>
+
+
+        <!-- Resources -->
+        <div>
+          <h3
+            class="mb-5
+                   text-[16px]
+                   font-semibold"
+          >
+            Resources
+          </h3>
+
+          <div
+            class="flex flex-col gap-4
+                   text-[14px]
+                   text-white/90"
+          >
+            <a
+              href="./launch.html"
+              class="hover:text-green"
+            >
+              HillsLaunch
+            </a>
+
+            <a
+              href="./news.html"
+              class="hover:text-green"
+            >
+              News
+            </a>
+
+            <a
+              href="./apply.html"
+              class="hover:text-green"
+            >
+              Apply
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Company -->
+        <div>
+          <h3
+            class="mb-5
+                   text-[16px]
+                   font-semibold"
+          >
+            Company
+          </h3>
+
+          <div
+            class="flex flex-col gap-4
+                   text-[14px]
+                   text-white/90"
+          >
+            <a
+              href="./about.html"
+              class="hover:text-green"
+            >
+              About us
+            </a>
+
+            <a
+              href="#"
+              class="hover:text-green"
+            >
+              Careers
+            </a>
+
+            <a
+              href="#"
+              class="hover:text-green"
+            >
+              Media kit
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <!-- Footer bottom -->
+      <div
+        class="mt-8 flex flex-col gap-7
+               border-t border-[#D8D1BC]
+               pt-7
+               md:flex-row
+               md:items-center
+               md:justify-between"
+      >
+
+        <p class="text-[15px] text-white/90">
+          ©2026 Hillsgrowth
+        </p>
+
+
+        <!-- Social Icons -->
+        <div class="flex items-center gap-7">
+
+          <a href="#" aria-label="LinkedIn">
+            <img
+              src="../assets/icons/akar-icons_linkedin-box-fill.png"
+              alt=""
+              class="h-5 w-5 object-contain"
+            />
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <img
+              src="../assets/icons/akar-icons_youtube-fill.png"
+              alt=""
+              class="h-5 w-5 object-contain"
+            />
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <img
+              src="../assets/icons/akar-icons_instagram-fill.png"
+              alt=""
+              class="h-5 w-5 object-contain"
+            />
+          </a>
+
+          <a href="#" aria-label="Facebook">
+            <img
+              src="../assets/icons/bxl_facebook-circle.png"
+              alt=""
+              class="h-5 w-5 object-contain"
+            />
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="../src/main.js"></script>
+
+</body>
+</html>

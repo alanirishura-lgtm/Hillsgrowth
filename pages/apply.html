@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hillsgrowth — Apply</title>
+  <link rel="stylesheet" href="../dist/output.css" />
+</head>
+
+<body class="bg-cream text-ink">
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+  <header
+    class="absolute inset-x-0 top-0 z-30 w-full
+           bg-[#F7F4EC]/70 backdrop-blur-[10px]"
+  >
+    <div
+      class="mx-auto flex h-[92px] w-full max-w-[1440px]
+             items-center justify-between px-6 md:px-12 lg:px-[50px]"
+    >
+
+      <a href="../index.html" class="shrink-0">
+        <img
+          src="../assets/images/home-7.png"
+          alt="Hillsgrowth"
+          class="h-14 w-auto"
+        />
+      </a>
+
+      <nav class="hidden items-center gap-9 text-sm font-medium lg:flex">
+
+        <a
+          href="../index.html"
+          class="border-b border-transparent pb-1 transition-colors duration-200 hover:border-[#1F5F3D]"
+        >
+          Home
+        </a>
+
+        <a
+          href="./about.html"
+          class="border-b border-transparent pb-1 transition-colors duration-200 hover:border-[#1F5F3D]"
+        >
+          About
+        </a>
+
+        <a
+          href="./launch.html"
+          class="border-b border-transparent pb-1 transition-colors duration-200 hover:border-[#1F5F3D]"
+        >
+          HillsLaunch
+        </a>
+
+<div class="group relative">
+          <button
+            type="button"
+            class="flex items-center gap-2 border-b
+                   border-transparent pb-1
+                   transition-colors duration-200
+                   hover:border-[#1F5F3D]"
+          >
+            <span>HillsView</span>
+
+            <img
+              src="../assets/images/Vector.png"
+              alt=""
+              class="h-[7px] w-auto transition-transform
+                     duration-200 group-hover:rotate-180"
+            />
+          </button>
+
+          <!-- Dropdown -->
+          <div
+            class="invisible absolute left-1/2 top-full
+                   z-50 w-[190px] -translate-x-1/2
+                   pt-4 opacity-0
+                   transition-all duration-200
+                   group-hover:visible group-hover:opacity-100"
+          >
+            <div
+              class="overflow-hidden rounded-[8px]
+                     border border-[#DDD8CC]
+                     bg-[#F7F4EC]
+                     shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
+            >
+              <a
+                href="./corner.html"
+                class="block bg-[#1F5F3D]/[0.07]
+                       px-5 py-3 text-[#1F5F3D]
+                       transition-colors
+                       hover:bg-[#1F5F3D]
+                       hover:text-white"
+              >
+                Corner
+              </a>
+
+              <a
+                href="./ask-question.html"
+                class="block border-t border-[#DDD8CC]
+                       px-5 py-3
+                       transition-colors
+                       hover:bg-[#1F5F3D]
+                       hover:text-white"
+              >
+                Ask Question
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="./partnership.html"
+          class="border-b border-transparent pb-1 transition-colors duration-200 hover:border-[#1F5F3D]"
+        >
+          Partnership
+        </a>
+
+      </nav>
+
+      <a
+        href="./apply.html"
+        class="btn-primary hidden lg:inline-flex"
+      >
+        Apply now
+      </a>
+
+      <button
+        data-menu-button
+        class="text-2xl lg:hidden"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div
+      data-mobile-menu
+      class="hidden border-t border-line bg-cream px-6 py-5 lg:hidden"
+    >
+      <nav class="flex flex-col gap-4 text-sm font-medium">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./launch.html">HillsLaunch</a>
+        <a href="./partnership.html">Partnership</a>
+        <a href="./apply.html">Apply now</a>
+      </nav>
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       MAIN
+  ========================================================== -->
+  <main class="pt-[92px]">
+
+    <!-- =======================================================
+         APPLY INTRO
+    ======================================================== -->
+    <section class="pt-8 lg:pt-10">
+
+      <div
+        class="mx-auto w-full max-w-[940px]
+               px-6 md:px-10"
+      >
+
+        <p class="eyebrow">
+          Welcome
+        </p>
+
+        <h1 class="display-title mt-1 text-4xl lg:text-[46px]">
+          Apply
+        </h1>
+
+        <p class="mt-3 text-[15px] text-muted">
+          Hillsgrowth (some texte here)
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         APPLICATION FORM
+    ======================================================== -->
+    <section class="pb-16 pt-8 lg:pb-20">
+
+      <div
+        class="mx-auto w-full max-w-[940px]
+               px-4 sm:px-6 md:px-10"
+      >
+
+        <form
+          action="#"
+          method="post"
+          class="rounded-[18px] bg-[#EDEAE0] px-5 py-7
+                 sm:px-7 lg:px-8 lg:py-8"
+        >
+
+
+          <!-- =================================================
+               TECHNICAL FOUNDER
+          ================================================== -->
+          <fieldset>
+
+            <legend class="text-sm font-medium">
+              Are you a technical founder?
+            </legend>
+
+            <p class="mt-1 text-xs italic text-muted">
+              i.e., You are a programmer, engineer, or scientist who can build
+              the product without outside assistance.
+            </p>
+
+            <div class="mt-2 flex items-center gap-7">
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="technical_founder"
+                  value="yes"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                Yes
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="technical_founder"
+                  value="no"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                No
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- =================================================
+               SCHOOL
+          ================================================== -->
+          <fieldset class="mt-5">
+
+            <legend class="text-sm font-medium">
+              Are you currently in school?
+            </legend>
+
+            <div class="mt-2 flex items-center gap-7">
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="in_school"
+                  value="yes"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                Yes
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="in_school"
+                  value="no"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                No
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- =================================================
+               EDUCATION
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="education"
+              class="block text-sm font-medium"
+            >
+              What is your highest education?
+            </label>
+
+            <input
+              id="education"
+              name="education"
+              type="text"
+              class="mt-2 h-10 w-full rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white px-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            />
+
+          </div>
+
+
+          <!-- =================================================
+               WORKING
+          ================================================== -->
+          <fieldset class="mt-5">
+
+            <legend class="text-sm font-medium">
+              Are you currently in working?
+            </legend>
+
+            <div class="mt-2 flex items-center gap-7">
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="currently_working"
+                  value="yes"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                Yes
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="currently_working"
+                  value="no"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                No
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- =================================================
+               WORK HISTORY
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="work_history"
+              class="block text-sm font-medium"
+            >
+              Tell us about your work history, if any
+            </label>
+
+            <p class="mt-1 text-xs italic text-muted">
+              (Should you be accepted, we may ask for references)
+            </p>
+
+            <textarea
+              id="work_history"
+              name="work_history"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               EXCLUSIVE COMMITMENT
+          ================================================== -->
+          <fieldset class="mt-5">
+
+            <legend class="text-sm font-medium">
+              If accepted, will you commit to working exclusively on this
+              project for the next year?
+            </legend>
+
+            <p class="mt-1 text-xs italic text-muted">
+              (i.e., you won't be in school or have another job)
+            </p>
+
+            <div class="mt-2 flex items-center gap-7">
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="exclusive_commitment"
+                  value="yes"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                Yes
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="exclusive_commitment"
+                  value="no"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                No
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- =================================================
+               RESIDENCE
+          ================================================== -->
+          <fieldset class="mt-5">
+
+            <legend class="text-sm font-medium">
+              If accepted, will you commit to staying at hillsgrowth residence
+              for 6 months without leaving?
+            </legend>
+
+            <p class="mt-1 text-xs italic text-muted">
+              (i.e., you won't be able to go home)
+            </p>
+
+            <div class="mt-2 flex items-center gap-7">
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="residential_commitment"
+                  value="yes"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                Yes
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="residential_commitment"
+                  value="no"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                No
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- =================================================
+               BUILT BEFORE
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="built_before"
+              class="block text-sm font-medium"
+            >
+              Tell us about things you've built before. For example apps you've
+              built, websites, open source contributions. Include URLs if
+              possible.
+            </label>
+
+            <textarea
+              id="built_before"
+              name="built_before"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               COFOUNDERS
+          ================================================== -->
+          <fieldset class="mt-5">
+
+            <legend class="text-sm font-medium">
+              Do you have co-founder(s)?
+            </legend>
+
+            <div class="mt-2 flex items-center gap-7">
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="cofounders"
+                  value="yes"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                Yes
+              </label>
+
+              <label class="flex cursor-pointer items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name="cofounders"
+                  value="no"
+                  class="h-4 w-4 accent-[#1F6B47]"
+                />
+                No
+              </label>
+
+            </div>
+
+          </fieldset>
+
+
+          <!-- =================================================
+               STARTUP
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="startup"
+              class="block text-sm font-medium"
+            >
+              What is your Startup going to make? Please describe your product
+              and what it does or will do.
+            </label>
+
+            <textarea
+              id="startup"
+              name="startup"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               WHAT STOPPED YOU
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="project_blockers"
+              class="block text-sm font-medium"
+            >
+              What has stopped you from starting this project? Please explain.
+            </label>
+
+            <textarea
+              id="project_blockers"
+              name="project_blockers"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               TECH STACK
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="tech_stack"
+              class="block text-sm font-medium"
+            >
+              What tech stack are you using, or planning to use, to build this
+              product?
+            </label>
+
+            <textarea
+              id="tech_stack"
+              name="tech_stack"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               WHY THIS IDEA
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="idea_reason"
+              class="block text-sm font-medium"
+            >
+              Why did you pick this idea to work on? Do you have domain
+              expertise in this area? How do you know people need what you're
+              making?
+            </label>
+
+            <textarea
+              id="idea_reason"
+              name="idea_reason"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               COMPETITORS
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="competitors"
+              class="block text-sm font-medium"
+            >
+              Who are your competitors? What do you understand about your
+              business that they don't?
+            </label>
+
+            <textarea
+              id="competitors"
+              name="competitors"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               REVENUE
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="revenue"
+              class="block text-sm font-medium"
+            >
+              How will you make money? How much could you make?
+            </label>
+
+            <textarea
+              id="revenue"
+              name="revenue"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               OTHER IDEAS
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="other_ideas"
+              class="block text-sm font-medium leading-5"
+            >
+              If you had any other ideas you considered applying with, please
+              list them. One may be something we've been waiting for. Often when
+              we fund people it's to do something they list here and not in the
+              main application
+            </label>
+
+            <textarea
+              id="other_ideas"
+              name="other_ideas"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               HOW DID YOU HEAR
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="hear_about"
+              class="block text-sm font-medium"
+            >
+              How did you hear about Hillsgrowth?
+            </label>
+
+            <input
+              id="hear_about"
+              name="hear_about"
+              type="text"
+              class="mt-2 h-10 w-full rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white px-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            />
+
+          </div>
+
+
+          <!-- =================================================
+               WHY APPLY
+          ================================================== -->
+          <div class="mt-5">
+
+            <label
+              for="why_apply"
+              class="block text-sm font-medium"
+            >
+              What convinced you to apply to Hillsgrowth?
+            </label>
+
+            <textarea
+              id="why_apply"
+              name="why_apply"
+              rows="5"
+              class="mt-2 w-full resize-y rounded-[3px]
+                     border border-[#E3DFD4]
+                     bg-white p-4 text-sm
+                     outline-none transition
+                     focus:border-green"
+            ></textarea>
+
+          </div>
+
+
+          <!-- =================================================
+               BUTTONS
+          ================================================== -->
+          <div
+            class="mt-6 flex flex-col gap-4
+                   sm:flex-row sm:items-center sm:justify-between"
+          >
+
+            <button
+              type="button"
+              class="inline-flex min-h-[42px] items-center
+                     justify-center bg-[#BE9227]
+                     px-5 text-sm text-white
+                     transition hover:bg-[#A77E1E]"
+            >
+              Save and continue later
+            </button>
+
+
+            <button
+              type="submit"
+              class="inline-flex min-h-[42px] items-center
+                     justify-center bg-[#BE9227]
+                     px-8 text-sm text-white
+                     transition hover:bg-[#A77E1E]"
+            >
+              Apply
+            </button>
+
+          </div>
+
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER — FULL WIDTH
+  ========================================================== -->
+  <footer class="w-full bg-ink py-14 text-white">
+
+    <div
+      class="mx-auto w-full max-w-[1440px]
+             px-6 md:px-12 lg:px-[50px]"
+    >
+
+      <div class="grid gap-10 md:grid-cols-[1fr_auto_auto]">
+
+        <!-- Logo -->
+        <div>
+          <img
+            src="../assets/images/home-7.png"
+            alt="Hillsgrowth"
+            class="h-20 w-auto"
+          />
+        </div>
+
+
+        <!-- Resources -->
+        <div>
+
+          <h3 class="mb-4 text-sm font-semibold">
+            Resources
+          </h3>
+
+          <div class="flex flex-col gap-3 text-sm text-white/70">
+
+            <a
+              href="./launch.html"
+              class="transition-colors hover:text-white"
+            >
+              HillsLaunch
+            </a>
+
+            <a
+              href="./news.html"
+              class="transition-colors hover:text-white"
+            >
+              News
+            </a>
+
+            <a
+              href="./apply.html"
+              class="transition-colors hover:text-white"
+            >
+              Apply
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Company -->
+        <div>
+
+          <h3 class="mb-4 text-sm font-semibold">
+            Company
+          </h3>
+
+          <div class="flex flex-col gap-3 text-sm text-white/70">
+
+            <a
+              href="./about.html"
+              class="transition-colors hover:text-white"
+            >
+              About us
+            </a>
+
+            <a
+              href="#"
+              class="transition-colors hover:text-white"
+            >
+              Careers
+            </a>
+
+            <a
+              href="#"
+              class="transition-colors hover:text-white"
+            >
+              Media kit
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Footer bottom -->
+      <div
+        class="mt-12 flex flex-col justify-between gap-5
+               border-t border-white/40 pt-7
+               sm:flex-row sm:items-center"
+      >
+
+        <span class="text-sm text-white/70">
+          ©2026 Hillsgrowth
+        </span>
+
+
+        <div class="flex items-center gap-5">
+
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            class="transition-opacity hover:opacity-70"
+          >
+            <img
+              src="../assets/icons/akar-icons_linkedin-box-fill.png"
+              alt=""
+              class="h-5 w-5 object-contain"
+            />
+          </a>
+
+          <a
+            href="#"
+            aria-label="YouTube"
+            class="transition-opacity hover:opacity-70"
+          >
+            <img
+              src="../assets/icons/akar-icons_youtube-fill.png"
+              alt=""
+              class="h-5 w-5 object-contain"
+            />
+          </a>
+
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="transition-opacity hover:opacity-70"
+          >
+            <img
+              src="../assets/icons/akar-icons_instagram-fill.png"
+              alt=""
+              class="h-5 w-5 object-contain"
+            />
+          </a>
+
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="transition-opacity hover:opacity-70"
+          >
+            <img
+              src="../assets/icons/bxl_facebook-circle.png"
+              alt=""
+              class="h-5 w-5 object-contain"
+            />
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="../src/main.js"></script>
+
+</body>
+</html>
